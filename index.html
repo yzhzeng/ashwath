@@ -16,7 +16,7 @@ menu: no
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/life/page{{paginator.next_page}}">{{ site.previous_page }}</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">{{ site.previous_page }}</a>
   {% else %}
     <span class="pagination-item older">{{ site.previous_page }}</span>
   {% endif %}
@@ -24,7 +24,7 @@ menu: no
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/">{{site.next_page}}</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/life/page{{paginator.previous_page}}">{{site.next_page}}</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">{{site.next_page}}</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">{{site.next_page}}</span>
