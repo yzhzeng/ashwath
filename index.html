@@ -15,11 +15,6 @@ menu: no
 </div>
 
 <div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">{{ site.next_page }}</a>
-  {% else %}
-    <span class="pagination-item older">{{ site.next_page }}</span>
-  {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/">{{site.previous_page}}</a>
@@ -28,5 +23,10 @@ menu: no
     {% endif %}
   {% else %}
     <span class="pagination-item newer">{{site.previous_page}}</span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">{{ site.next_page }}</a>
+  {% else %}
+    <span class="pagination-item older">{{ site.next_page }}</span>
   {% endif %}
 </div>
