@@ -59,3 +59,7 @@ author:
 gems: 
   - jekyll-seo-tag
   - jekyll-paginate
+
+
+previous_page:       上一页
+next_page:           下一页
