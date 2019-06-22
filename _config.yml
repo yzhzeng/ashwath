@@ -14,7 +14,7 @@ url: "http://yzhzeng.github.io/myblog/"
 permalink: :title/
 full-url: "http://yzhzeng.github.io/myblog/" # the base hostname & protocol for your site
 paginate: 3
-paginate_path: "/life/page:num/"
+paginate_path: "/page:num/"
 
 # CSS
 sass:
