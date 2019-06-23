@@ -58,8 +58,8 @@ author:
   
 gems: 
   - jekyll-seo-tag
-  - jekyll-paginate
-
+#  - jekyll-paginate
+  - jekyll-paginate-plugin
 
 previous_page:       上一页
 next_page:           下一页
